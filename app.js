@@ -1,4 +1,4 @@
-//Load JS module
+//Load JS modu
 const express = require('express');
 const port = 3000;
 const app = express();
