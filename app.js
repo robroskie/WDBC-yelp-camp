@@ -102,7 +102,8 @@ app.get('/campgrounds', async (req, res) => {
 });
 
 app.get('/', async (req, res) => {
-    console.log('hi');
+    const campgrounds = await Campground.find({});
+    res.render('campgrounds/index', { campgrounds })
 });
 
 app.listen(port, () => {
